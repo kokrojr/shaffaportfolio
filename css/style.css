@@ -237,6 +237,10 @@ p{
     margin-top: 12px;
     margin-bottom: 42px;
 }
+/* *************************** */
+.sect-two, .sect-three a{
+    padding: 12px 32px;
+}
 
 .sect-two .card-btn a{
     padding: 10px 32px;
