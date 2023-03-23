@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition:  0.2s linear;
+    /* box-sizing: border-box; */
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Jost', sans-serif;
+}
+
+h1{
+    font-size: 56px;
+    line-height: 63px;
+}
+
+p{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* ========= Reusuable CSS ========== */
+:root{
+    --hot-orange: #FD4A18;
+    --dark-orange:  #ff3e08;
+    --main-black: #142129;
+    --brown-light: #80230C0F;
+    --light-grey: #F5F5F5;
+    --xl-light-grey: #FBFBFB;
+    --dark-grey: #616161;
+    --coffe-brown: #230C0F;
+    --white: #fff;
+}
+
+/* primary button  */
+.pri-cta{
+    text-decoration: none;
+    background-color: var(--hot-orange);
+    font-family: 'Jost', sans-serif;
+    color: var(--white);
+    font-weight: 400;
+    border-radius: 8px;
+}
+/* primary hover */
+.pri-cta:hover{
+    color: var(--white);
+    background-color: var(--dark-orange);
+}
+/* secondary button */
+.secd-cta{
+    text-decoration: none;
+    background-color: var(--light-grey);
+    font-family: 'Jost', sans-serif;
+    color: var(--hot-orange);
+    font-weight: 400;
+    border-radius: 8px;
+}
+/* seconday hover */
+
+.sect-caption{
+    color: var(--hot-orange);
+    text-transform: uppercase;
+}
+
+.page-heading{
+    color: var(--white);
+    text-transform: capitalize;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-size: 64px;
+}
+
+
+/* ======== HEADER SECTION ========== */
+.header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    /* background-color: #142129; */
+}
+
+.header .navigation{
+    /* width: 90%; */
+    height: 100%;
+    margin : 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navigation .logo{
+    height: 70px;
+}
+
+.header .navigation .nav-links{
+    text-decoration: none;
+    color: var(--white);
+    padding: 16px;
+    margin: 0 8px;
+    font-size: 16px;
+}
+
+.header .navigation .nav-links:hover{
+    color: var(--hot-orange);
+}
+
+.header .navigation .nav-text{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.header .navigation .nav-arrow-head{
+    font-size: 12px;
+}
+
+.header .navigation .ext-nav-btn{
+    padding: 14px 24px;
+}
+/* style link in hero section */
+.welcome-link{
+    padding: 16px 46px;
+    margin: 0px 4px;
+}
+
+/* ============== HERO SECTION =================== */
+
+.hero-sect{
+    width: 100%;
+    height: 80vh;
+    background-image: url(/Images/HERO-SECTION-IMAGE.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome-banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-banner .welcome-text p{
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 29px;
+    line-height: 1.8em;
+    /* margin-bottom: 38px; */
+}
+
+.welcome-banner .welcome-action-links{
+    margin-top: 12px;
+}
+
+.hero-shape-container{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: -120px;
+    /* background-color: #142129; */
+    background-image: url(/Images/SHAPE-HERO-SECTION.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 9;
+}
+
+/* ========== Section Two Begins =============== */
+
+.sect-two{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.sect-two h3{
+    padding: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.service-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.sect-two .card{
+    width: 30.5%;
+    height: 401px;
+    /* background: linear-gradient(-11.9deg, #532619 -73.52%, rgba(255, 255, 255, 0) 20.74%); */
+    /* background-color: var(--xl-light-grey); */
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--brown-light);
+}
+
+.sect-two .card:hover{
+    box-shadow: 10px 5px 15px #c4c4c4;
+    background: linear-gradient(-11.9deg, #532619 -73.52%, rgba(255, 255, 255, 0) 20.74%);
+    border: none;
+}
+
+.sect-two .card-svg{
+    margin-top: 55px;
+    margin-bottom: 18px;
+}
+
+.sect-two .card-txt{
+    width: 90%;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sect-two .card-txt h4{
+    font-size: 22px;
+}
+
+.sect-two .card-txt p{
+    /* color: var(--dark-grey); */
+    margin-top: 12px;
+    margin-bottom: 42px;
+}
+
+.sect-two .card-btn a{
+    padding: 10px 32px;
+    text-decoration: none;
+    color: var(--main-black);
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    
+}
+
+.ico-arrow-head{
+    rotate: 30deg;
+    margin-left: 4px;
+}
+
+/* .view-all-btn-container{
+    margin-top: 20px;
+    margin-bottom: 30px;
+} */
+
+/* ======= section three ========== */
+
+.sect-three{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.sect-three-coln1{
+    width: 50%;
+    height: 60vh;
+    background-image: url(/Images/Partner_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sect-three-coln2{
+    width: 50%;
+    align-self: center;
+    flex-shrink: 3;
+    padding-left: 5%;
+    /* padding-right: 10%; */
+}
+
+.sect-three .sect-txt h3{
+    width: 90%;
+}
+
+.sect-heading{
+    font-size: 38px;
+    text-transform: capitalize;
+}
+
+.sect-three .sect-txt p{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+/* ========== Section four ========== */
+
+.sect-four{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--light-grey);
+    margin-top: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.sect-four .sect-container{
+
+    text-align: center;
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.sect-four .sect-container h3{
+    margin-bottom: 12px;
+}
+
+.sect-four .sect-container p{
+    font-size: 18px;
+    margin-bottom: 52px;
+}
+
+.sect-four .sect-container a{
+    padding: 14px 46px;
+}
+
+/* .startup-shape-svg{
+    width: 100%;
+    height: 255px;
+    background-image: url(/Images/Startup-shape-svg.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -180px;
+    z-index: 99;
+} */
+
+/* =========== Section five begins ============ */
+
+.sect-five{
+    width: 100%;
+    height: 30vh;
+    /* background-color: var(--coffe-brown); */
+    background-image: url(/Images/happy-team.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    text-align: center;
+}
+
+.counter-card{
+    color: var(--light-grey);
+    width: 250px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #142129; */
+}
+
+.counter-card .count, 
+.counter-card .count-data{
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--xl-light-grey);
+}
+
+.count_sym{
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--xl-light-grey);
+}
+
+.count-title{
+    color: var(--light-grey);
+    margin-top: 8px;
+    text-transform: capitalize;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.line{
+    width: 30px;
+    height: 4px;
+    background-color: var(--hot-orange);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* ====== Section six ======= */
+
+.sect-six{
+    width: 100%;
+    height: 100vh;
+    background-color: #230C0F;
+}
+
+
+.sect-six-headline{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.sect-six-headline p{
+    margin-top: 20px;
+}
+
+.testimony-container{
+    width: 85%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.ny-card{
+    /* width: 350px; */
+    /* height: 250px; */
+    width: 40%;
+    height: 250px;
+    background-color: var(--light-grey);
+    padding: 20px;
+    margin: 0 16px;
+}
+
+.ny-card .ny-ico{
+    font-size: 24px;
+    color: var(--hot-orange);
+}
+
+/* ========== news letter */
+
+.sect-seven{
+    width: 100%;
+    height: 40vh;
+    background-color: #142129;
+}
